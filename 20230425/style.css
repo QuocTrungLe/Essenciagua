@@ -11,11 +11,30 @@ section {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+html {
+  font-family: 'Lato';
+}
 
 .bg-header-title {
   width: 100%;
   height: 44px;
   background-color: #A27EB6 !important;
+}
+
+.bg-footer {
+  background-color: #263F4F !important;
 }
 
 .text-dark-properties {
@@ -53,7 +72,7 @@ a {
 }
 
 .txt-search-child {
-  width: 90%;
+  width: 100%;
 }
 
 .input-group {
@@ -62,11 +81,6 @@ a {
   flex-wrap: wrap;
   align-items: stretch;
   width: 59%;
-}
-
-.account-btn {
-  width: 30px;
-  height: 100%;
 }
 
 .search-icon {
@@ -132,11 +146,623 @@ input {
 ■ floatクリア
 --------------------------------------------------------- */
 span.clear {
-	height: 10px;
-	margin: 0;
-	padding: 0;
-	font-size: 1px;
-	line-height: 1px;
-	display: block;
-	clear: both;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+  line-height: 1px;
+  display: block;
+  clear: both;
+}
+
+/* ---------------------------------------------------------
+■ Navbar
+--------------------------------------------------------- */
+nav {
+  background: #263F4F;
+}
+
+.nav-size{
+  margin: 0 70px!important;
+}
+
+.navbar-nav>.nav-item>.nav-link {
+  color: #FFFFFF;
+}
+
+.account-btn,
+.cart-btn {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.icon-nav>i {
+  font-size:25px;
+  color: black;
+}
+
+.cart_qty_cls {
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  top: -4%;
+  right: -6px;
+  padding: 3px;
+}
+
+.onhover-dropdown {
+  position: relative;
+  font-size: 14px;
+}
+
+.onhover-dropdown .onhover-show-div {
+  top: 50px;
+  position: absolute;
+  z-index: 100 !important;
+  background-color: #fff;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  min-width: 160px;
+  text-align: left;
+  -webkit-box-shadow: 0px 1px 2px 0px #cacaca;
+  box-shadow: 0px 1px 2px 0px #cacaca;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  padding: 15px 20px;
+  border-radius: 0 !important;
+}
+
+.onhover-dropdown .onhover-show-div li {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.border-0 {
+  border: none !important;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
+/* ---------------------------------------------------------
+■ Carousel
+--------------------------------------------------------- */
+.carousel-slide {
+  margin: auto;
+}
+
+.item {
+  height: 100vh;
+}
+
+.item img {
+  height: 100% !important;
+  margin: auto;
+}
+
+.carousel-control {
+  background: none !important;
+}
+
+.carousel-indicators {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-indicators button.active {
+  width: 12px;
+  height: 12px;
+  background-color: #A27EB6;
+}
+.carousel-item {
+  position: relative;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50% !important;
+  left: 35% !important;
+  transform: translate(-50%,-50%);
+}
+.carousel-caption p ,
+.carousel-caption div ,
+  .carousel-caption h5 {
+  text-align: left;
+
+}
+.carousel-caption h5 {
+  font-weight: 700;
+font-size: 36px;
+line-height: 24px;
+/* identical to box height, or 67% */
+
+
+color: #FFFFFF;
+margin-bottom: 37px;
+}
+.carousel-caption p {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 54px;
+}
+.carousel-caption div .button {
+  color: #fff;
+}
+
+/* ---------------------------------------------------------
+■ Product
+--------------------------------------------------------- */
+
+.instock {
+  background: rgba(36, 186, 230, 0.1);
+  color: #0AA3D0;
+  padding: 2px 10px 2px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.promo {
+  background: rgba(162, 126, 182, 0.1);
+  color: #85599D;
+  ;
+  padding: 2px 10px 2px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.btn-add {
+  border: solid black 1px !important;
+  background: none;
+}
+
+.btn-explore {
+  border: none;
+  color: white;
+  width: 135px;
+  height: 51px;
+  background: #263F4F;
+}
+
+.item-fol {
+  width: 100%;
+  position: relative;
+}
+
+.item-fol>img {
+  width: 100px;
+  left: 20%;
+  position: absolute;
+
+  height: 180px;
+  top: -20px;
+  opacity: 1;
+}
+
+.item-fol>p {
+  color: #169EC6;
+}
+
+.major>h3 {
+  margin-bottom: 85.34px;
+}
+
+.item-major-img {
+  width: 140.86px;
+  height: 140.86px;
+}
+
+.item-major-img.relaxation {
+  background-color: rgba(162, 126, 182, .2);
+}
+
+.item-major-img.vitality {
+  background: rgba(36, 186, 230, .2);
+}
+
+.item-major-img.purification {
+  background: rgba(48, 170, 136, .2);
+}
+
+.item-major-img.selfcare {
+  background-color: rgba(155, 186, 94, .2);
+}
+
+.item-major-img img {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-major h3.selfcare {
+  color: #9BBA5E;
+}
+
+.item-major h3.purification {
+  color: #30AA88;
+}
+
+.item-major h3.vitality {
+  color: #24BAE6;
+
+}
+
+.item-major h3.relaxation {
+  font-family: 'Lato';
+  margin-top: 1.784rem;
+  color: #A27EB6;
+
+}
+/* ---------------------------------------------------------
+■ Bestsllers
+--------------------------------------------------------- */
+.bestsellers .card .product-img{
+  display: flex !important;
+  justify-content: center !important;
+}
+/* ---------------------------------------------------------
+■ OurBrand
+--------------------------------------------------------- */
+.our-brand {
+  background-image: url('./img/bg-img/bg-ourbrand.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 411px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.our-brand .heading {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.our-brand .des {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 40%;
+  line-height: 24px;
+  text-align: center;
+  margin: 19px 0;
+}
+
+.button {
+  background: #A27EB6;
+  width: 135px;
+  height: 51px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.button a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* ---------------------------------------------------------
+■ Banner Essenciagua Loyalty Member
+--------------------------------------------------------- */
+.banner-register {
+  padding: 0 100px;
+  background-image: url('./img/banner-register/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+  display: flex;
+
+  align-items: center;
+}
+
+.banner-register .banner-img {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 30px;
+  margin-right: 42.01px;
+}
+
+.banner-register .banner-heading {
+  margin-right: 133px;
+}
+
+.banner-register .button {
+  background-color: #263F4F;
+}
+
+/* products */
+.products-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.products .card:hover {
+  background: #F6F2F8;
+  border-radius: 4px !important;
+}
+.card .card-body .btn-add:hover {
+  background: rgba(0, 0, 0, 0.8);
+  
+  color: #fff;
+  border-color: #fff !important;
+}
+.products .card .card-img-top {
+  width: 100%;
+  height: 100%;
+
+}
+
+.products .card .product-img {
+  margin: 20px 0;
+}
+
+.products .card .product-img a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------
+■ Blog
+--------------------------------------------------------- */
+.blog .blog-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Lato';
+}
+
+.blog .blog-heading-des {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  margin-bottom: 8px;
+
+}
+
+.blog .blog-heading-des a {
+  text-decoration: underline !important;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Lato';
+  color: #000;
+}
+
+.posts {
+  justify-content: space-between;
+}
+
+.blog .posts .post-img img {
+  width: 100%;
+}
+
+.blog .posts .post-day {
+  margin: 14px 0 8px 0;
+  color: #000;
+  opacity: .5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.blog .post-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.blog .post-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #000000;
+
+  opacity: 0.7;
+}
+
+.blog .post-read-more {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+/* ---------------------------------------------------------
+■ Newsletter
+--------------------------------------------------------- */
+.newsletter {
+  background: #FFFFFF;
+  border-width: 1px 0px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 303px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #00000026;
+  border-bottom: 1px solid #00000026;
+  margin-top: 63.57px;
+  margin-bottom: 41px;
+}
+
+.newsletter-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9px;
+}
+
+.newsletter-header h2 {
+  margin-left: 10px;
+}
+
+.newsletter-img {}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 32px;
+
+  text-align: center;
+
+  color: #263F4F;
+
+}
+
+.newsletter-desc {
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 19px;
+  text-align: center;
+
+  color: #000000;
+
+  opacity: 0.7;
+}
+
+.newsletter-form {
+  
+background: #F5F5F5;
+}
+
+.newsletter-email {
+  font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+background: #F5F5F5;
+outline: none;
+border: none;
+padding: 9px 0 9px 17px;
+height: 40px;
+width: 433px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+.newsletter-form .button {
+  border: none;
+  padding: 8px 23px;
+  color: #fff;
+  background: #24BAE6;
+}
+
+/* ---------------------------------------------------------
+■ Essenciagua on Instagram
+--------------------------------------------------------- */
+.ins{
+  color:#263F4F;
+}
+
+.ins i{
+  font-size:100px;
+}
+
+.btn-follow{
+  background: #30AA88; 
+  color:white;
+  border:0;
+  padding:4px 14px;
+}
+
+.ins .bg-ins{
+  width:357.79px;
+  height:450px;
+  z-index:-1;
+  opacity:0.5;
+}
+
+/* ---------------------------------------------------------
+■ Footer
+--------------------------------------------------------- */
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-right: 50px; 
+}
+
+.input-container::before {
+  content: "Subscribe";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+
+  background-color: #24BAE6; 
+  text-align: center;
+  line-height: 46px; 
+}
+
+.input-box{
+  height:45px!important;
+}
+
+.follow-us > i{
+  font-size:24px;
 }
