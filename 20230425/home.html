@@ -10,6 +10,8 @@
 
     <!-- Title  -->
     <title>Amado - Furniture Ecommerce Template | Home</title>
+
+
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -20,6 +22,9 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!-- Slick js -->
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -31,14 +36,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script>
-        function ChangeToLogin(){
-            location.href = 'file:///D:/PrestaShop/Essenciagua/Essenciagua/20230425/login.html';
-        }
-    </script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
                 </div>
             </div>
             <div class="row align-items-center py-3 px-xl-5 p-0 w-100">
-                <div class="col-lg-4 col-xs-3 d-lg-block" style="text-align: center;">
+                <div class="col-lg-4 col-xs-3 d-lg-block">
                     <a class="text-decoration-none">
                         <img src="css/image/Frame.png" alt="Essenciagua">
                     </a>
@@ -80,7 +81,7 @@
 
                 <div class="col-lg-4 col-xs-4">
                     <div class="d-flex justify-content-center">
-                        <div class="account-btn" onclick="ChangeToLogin()"">
+                        <div class="account-btn">
                             <span class="bg-transparent text-primary icon-nav p-0">
                                 <i class="bi bi-person"></i>
                             </span>
@@ -98,9 +99,9 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="./img/icon/en.png"> EN
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="language">
-                                <li><a class="dropdown-item" href="#">JP</a></li>
-                                <li><a class="dropdown-item" href="#">VN</a></li>
+                            <ul class="dropdown-menu shadow-lg" aria-labelledby="language">
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a></li>
                             </ul>
                         </div>
                     </div>
@@ -216,7 +217,84 @@
 
         <!--Banner-->
         <section class="banner">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <section class="slider p-0 m-0">
+                <div>
+                    <img src="./img/banner-img/banner.png">
+                    <div class="desc">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum color</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="">
+                                <a href="" class="button">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/banner-img/banner.png">
+                    <div class="desc">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum color</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="">
+                                <a href="" class="button">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/banner-img/banner.png">
+                    <div class="desc">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum color</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="">
+                                <a href="" class="button">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/banner-img/banner.png">
+                    <div class="desc">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum color</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="">
+                                <a href="" class="button">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/banner-img/banner.png">
+                    <div class="desc">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lorem ipsum color</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class="">
+                                <a href="" class="button">See Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -266,11 +344,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+
         </section>
 
         <!--Content-->
-        <section class="content w-100 p-5">
+        <section class="content w-100 px-6 p-5">
             <div class="bestsellers">
                 <h2>Bestsellers</h2>
                 <div class="d-flex justify-content-between">
@@ -283,8 +362,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -321,8 +400,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -359,8 +438,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -397,8 +476,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -459,7 +538,7 @@
                     <div class="col-lg-3 col-md-6 p-0 d-flex justify-content-center align-items-center">
                         <div class="item-major d-flex flex-column justify-content-center align-items-center">
                             <div class="item-major-img rounded-circle position-relative vitality">
-                                <img src="/img/major-img/vitality.png" alt="">
+                                <img src="./img/major-img/vitality.png" alt="">
                             </div>
                             <h3 class="item-heading text-center mt-4  fw-bold fs-5 vitality">
                                 Vitality
@@ -476,7 +555,7 @@
                     <div class="col-lg-3 col-md-6 p-0 d-flex justify-content-center align-items-center">
                         <div class="item-major d-flex flex-column justify-content-center align-items-center">
                             <div class="item-major-img rounded-circle position-relative relaxation">
-                                <img src="/img/major-img/relaxation.png" alt="">
+                                <img src="./img/major-img/relaxation.png" alt="">
                             </div>
                             <h3 class="item-heading text-center mt-4  fw-bold fs-5 relaxation">
                                 Relaxation
@@ -493,7 +572,7 @@
                     <div class="col-lg-3 col-md-6 p-0 d-flex justify-content-center align-items-center">
                         <div class="item-major d-flex flex-column justify-content-center align-items-center">
                             <div class="item-major-img rounded-circle position-relative purification">
-                                <img src="/img/major-img/purification.png" alt="">
+                                <img src="./img/major-img/purification.png" alt="">
                             </div>
                             <h3 class="item-heading text-center mt-4  fw-bold fs-5 purification">
                                 Purification
@@ -510,7 +589,7 @@
                     <div class="col-lg-3 col-md-6 p-0 d-flex justify-content-center align-items-center">
                         <div class="item-major d-flex flex-column justify-content-center align-items-center">
                             <div class="item-major-img rounded-circle position-relative selfcare">
-                                <img src="/img/major-img/selfcare.png" alt="">
+                                <img src="./img/major-img/selfcare.png" alt="">
                             </div>
                             <h3 class="item-heading text-center mt-4  fw-bold fs-5 selfcare">
                                 Selfcare
@@ -545,7 +624,7 @@
         </section>
 
         <!-- banner Essenciagua Loyalty Member -->
-        <section class="w-100 p-5">
+        <section class="w-100 px-6 p-5">
             <div class="banner-register">
                 <div class="banner-img">
                     <img src="./img/banner-register/serum.png" alt="">
@@ -575,8 +654,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -613,8 +692,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -651,8 +730,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -689,8 +768,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -727,8 +806,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -765,8 +844,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -803,8 +882,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -841,8 +920,8 @@
                                 <a href="">
                                     <div class="item-major-img rounded-circle position-relative purification"
                                         style="background-color: #9BBA5E1A;">
-                                        <img src="/img/product-img/Vector (5).png" alt="">
-                                        <img src="/img/product-img/Rectangle 1142.png" alt="">
+                                        <img src="./img/product-img/Vector5.png" alt="">
+                                        <img src="./img/product-img/Rectangle1142.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -878,7 +957,7 @@
             </div>
         </section>
         <!-- blog -->
-        <section class="w-100 p-5">
+        <section class="w-100 px-6 p-5">
             <div class="blog">
                 <h2 class="blog-heading">
                     Magali’s Blog
@@ -944,7 +1023,7 @@
         <!-- join our newsletter -->
         <section class="newsletter w-100 text-center">
             <div class="newsletter-header">
-                <img src="/img/img-letter/email.png" alt="" class="newsletter-img">
+                <img src="./img/img-letter/email.png" alt="" class="newsletter-img">
                 <h2 class="newsletter-title">Join Our Newsletter</h2>
             </div>
             <p class="newsletter-desc">Don’t miss any more information about our products, our news, our promotions and
@@ -1121,11 +1200,11 @@
                         <h5 class="lh-lg fw-bold text-200 text-white">CONTACT</h5>
                         <div class="row input-group-icon mb-5">
                             <div class="col-12">
-                                <span><i class="fa fa-map-marker" style="font-size: 30px; padding-right: 15px;" aria-hidden="true"></i>Essenciagua distillery,
-                                    HQE business park La Tieule 48500 La Tieule</span><br><br>
-                                <span><i class="fa fa-phone" style="font-size: 20px; padding-right: 15px;" aria-hidden="true"></i> Such. : 04 66 48 45
+                                <span><i class="fa fa-map-marker me-4" aria-hidden="true"></i>Essenciagua distillery,
+                                    HQE business park La Tieule 48500 La Tieule</span><br>
+                                <span><i class="fa fa-phone me-3" aria-hidden="true"></i> Such. : 04 66 48 45
                                     06</span><br>
-                                <span><i class="fa fa-envelope" style="font-size: 20px; padding-right: 15px;"
+                                <span><i class="fa fa-envelope me-3"
                                         aria-hidden="true"></i>contact@essenciagua.com</span><br>
                             </div>
                         </div>
@@ -1156,6 +1235,31 @@
     </footer>
     <!-- Footer End -->
     </div>
+
+
+    <script>
+        function createSlick() {
+            $(".slider").not('.slick-initialized').slick({
+                autoplay: true,
+                dots: true,
+                slidesToShow: 1,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        }
+        createSlick();
+        $(window).on('resize', createSlick);
+
+
+    </script>
 
 </body>
 
