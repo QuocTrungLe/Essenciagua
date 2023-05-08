@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Amado - Furniture Ecommerce Template | Recipe Cart</title>
+
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Slick js -->
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    <!-- Video JS-->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 h-100">
+        <!-- Topbar Start -->
+        <header>
+            <div class="bg-header-title d-flex align-items-center">
+                <div class="d-lg-block w-100">
+                    <a class="w-100 d-flex align-items-center justify-content-center">Livraison offerte + cadeau dès
+                        45€² | -20% sur votre 1ère commande avec le code WELCOME³</a>
+                </div>
+            </div>
+            <div class="row align-items-center py-3 px-xl-5 p-0 w-100">
+                <div class="col-lg-4 col-xs-3 d-lg-block">
+                    <a class="text-decoration-none">
+                        <img src="css/image/Frame.png" alt="Essenciagua">
+                    </a>
+                </div>
+
+                <!-- Search taskbar -->
+                <div class="col-lg-4 col-xs-4 txt-search-parent">
+                    <form action="" class="txt-search-child">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-1 rounded-1" placeholder="Search">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent text-primary border-0">
+                                    <i class="bi bi-search search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Search end -->
+
+                <!-- Button taskbar start -->
+
+                <div class="col-lg-4 col-xs-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="account-btn">
+                            <span class="bg-transparent text-primary icon-nav p-0">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <span class="account-text">Account</span>
+                        </div>
+                        <div class="cart-btn ms-5">
+                            <span class="bg-transparent text-primary icon-nav">
+                                <i class="bi bi-cart"></i>
+                            </span>
+                            <span class="cart_qty_cls amount" id="cart-item">5</span>
+                            <span class="cart-text">Cart</span>
+                        </div>
+                        <div class="dropdown ms-5 me-5 mt-3">
+                            <a class="dropdown-toggle text-dark" href="#" role="button" id="language"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/icon/en.png"> EN
+                            </a>
+                            <ul class="dropdown-menu shadow-lg" aria-labelledby="language">
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><img src="./img/icon/en.png" class="me-2"> EN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Button taskbar end -->
+            </div>
+
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid nav-size">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-fill w-100">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Essential Oils
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Single</a></li>
+                                    <li><a class="dropdown-item" href="#">Blends</a></li>
+                                    <li><a class="dropdown-item" href="#">Unitary oils
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">The mixtures</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hydrolats
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                    <li><a class="dropdown-item" href="#">Our simple hydrolats</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Our blends of Hydrolats</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Massage Oils
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+
+                                    <li><a class="dropdown-item" href="#">Macerates</a></li>
+                                    <li><a class="dropdown-item" href="#">Massage Oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Vegetable oils</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Assortments
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"> Boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Books</a></li>
+                                    <li><a class="dropdown-item" href="#">DIY boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Accessories (laboratory)</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Diffusers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Guide
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#"> What are Essential oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Magali's words</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            The herbarium</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our brand
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Our story</a></li>
+                                    <li><a class="dropdown-item" href="#">Our commitments</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Our team</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            Synergie</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Find Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Professional Space</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- breadcrumb -->
+        <section class="w-100 px-md-6 px-custom1 mt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="#">Home</a></li>
+                <li class="breadcrumb-item" aria-current="ourstory">Herbarium</li>
+            </ol>
+        </section>
+
+        <!--Content-->
+
+
+
+
+        <section class="ourstory vitality px-md-6 px-custom1 mt-4 mb-5">
+            <div class="container-fluid p-0">
+                <h5 class=" vitality-heading text-uppercase">Magali’s Blog</h5>
+                <div class="row mt-3">
+                    <div class="col-12 mt-2 category">
+                        Category: <a href="">Recipe</a>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-12 pe-md-4 title mb-3">
+                        <h3 class="text-uppercase">Lorem ipsum colorLorem ipsum colorLorem ipsum color Lorem ipsum 01
+                        </h3>
+                    </div>
+                    <div class="col-12 col-md-6 pe-md-4 text">
+                        <div class="info mb-2">
+                            <i class="fa fa-user me-1" aria-hidden="true"></i>
+                            Dinh Van, 12-12-2022
+                        </div>
+                        <p class="vitality-desc-block"><b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                consequat,</b></p>
+
+                        <p class="vitality-desc-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                            diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscip</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./img/vitality-img/3.png" class="w-100">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mt-md-5">
+                    <div class="col-12 col-md-6 pe-md-4 order-md-1 order-2">
+                        <img src="./img/vitality-img/4.png" class="w-100 h-100">
+                    </div>
+                    <div class="col-12 col-md-6 order-md-1 order-1">
+                        <p class="vitality-desc-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                            diam delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                            delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                        </p>
+                        <p class="vitality-desc-block">
+                            is dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row mt-3 mt-md-5">
+                    <div class="col-12 col-md-6 pe-md-4 order-md-1 order-1 text">
+                        <p class="vitality-desc-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                            diam delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                            delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                        </p>
+                        <p class="vitality-desc-block">is dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse modelenit augue duis dolore te feugait nulla facilisi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-1 order-2">
+                        <img src="./img/vitality-img/5.png" class="w-100">
+                    </div>
+                </div>
+
+                <div class="row mt-3 mt-md-5">
+                    <div class="col-12 col-md-12">
+                        <p class="vitality-desc-block">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                            aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                            velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+                            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                            dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p class="vitality-desc-block">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <p class="vitality-desc-block">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                            blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cart recipe-cart mb-md-5">
+                <div class="col-12">
+                    <table class="table border-0 mb-0">
+                        <thead class="w-100">
+                            <tr>
+                                <th scope="col" class="text-uppercase fw-normal w-50 py-2 fw-bold">RECIPE CART</th>
+                                <th scope="col" class="text-uppercase fw-normal"></th>
+                                <th scope="col" class="text-uppercase fw-normal"></th>
+                                <th scope="col" class="text-uppercase fw-normal"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="./img/product-img/Rectangle1142.png">
+                                        </div>
+                                        <div class="text">
+                                            <span class="fw-bold">Yarrow</span>
+                                            <span class="instock ms-2">In stock</span>
+                                            <span class="newarrival ms-2">New Arrival</span>
+                                            <p class="mt-2">10 ml | Essential Oils</p>
+
+                                            <div class="icon">
+                                                <a href="">
+                                                    <i class="fa fa-pencil-square-o text-dark" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="">
+                                                    <i class="fa fa-trash-o ms-3 text-dark" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>€6.00</td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="minus-btn" type="button">-</button>
+                                        <input type="number" min="1" value="1">
+                                        <button class="plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td><b>€6.00</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="./img/product-img/Rectangle1142.png">
+                                        </div>
+                                        <div class="text">
+                                            <span class="fw-bold">Kemsainna</span>
+                                            <span class="instock ms-2">In stock</span>
+                                            <span class="newarrival ms-2">New Arrival</span>
+                                            <p class="mt-2">10 ml | Essential Oils</p>
+
+                                            <div class="icon">
+                                                <a href="">
+                                                    <i class="fa fa-pencil-square-o text-dark" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="">
+                                                    <i class="fa fa-trash-o ms-3 text-dark" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>€6.00</td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="minus-btn" type="button">-</button>
+                                        <input type="number" min="1" value="1">
+                                        <button class="plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td><b>€12.00</b></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="./img/product-img/Rectangle1142.png">
+                                        </div>
+                                        <div class="text">
+                                            <span class="fw-bold">Yarrow auga</span>
+                                            <span class="instock ms-2">In stock</span>
+                                            <span class="newarrival ms-2">New Arrival</span>
+                                            <p class="mt-2">10 ml | Essential Oils</p>
+
+                                            <div class="icon">
+                                                <a href="">
+                                                    <i class="fa fa-pencil-square-o text-dark" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="">
+                                                    <i class="fa fa-trash-o ms-3 text-dark" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>€6.00</td>
+                                <td>
+                                    <div class="quantity-input">
+                                        <button class="minus-btn" type="button">-</button>
+                                        <input type="number" min="1" value="1">
+                                        <button class="plus-btn" type="button">+</button>
+                                    </div>
+                                </td>
+                                <td><b>€12.00</b></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="w-100 d-flex justify-content-end bg-pink px-md-3 py-md-3">
+                        <div class="d-flex justify-content-between align-content-center align-items-center flex-column">
+                            <div class="d-flex mt-3 w-100">
+                                <p class="text-start me-5">
+                                    Quantity of collection
+                                </p>
+                                <div class="quantity-input text-end">
+                                    <button class="minus-btn" type="button">-</button>
+                                    <input type="number" min="1" value="1">
+                                    <button class="plus-btn" type="button">+</button>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mt-3 w-100">
+                                <p class="text-start">
+                                    Total
+                                </p>
+                                <div class="total fw-bold w-100 text-end ">
+                                    €24.00
+                                </div>
+                            </div>
+                            <div class="right">
+                                <button class="btn-add mb-2">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-3">
+            <div class="row">
+                <div class="col-12 my-2 d-flex flex-fill align-items-center align-content-center">
+                    <p class="text-bold mb-0">Share</p>
+                    <a href=""><img src="./img/icon/facebook.png" class="ms-3"></a>
+                    <a href=""><img src="./img/icon/google.png" class="ms-3"></a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="comment">
+                <h5 class="my-2 my-md-4">Add a comment </h5>
+                <div class="row mt-3">
+                    <div class="col-12 col-md-6">
+                        <input name="comment" type="text" placeholder="Comment" class="i-comment ps-2 w-100">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column ">
+                        <input name="name" type="text" placeholder="Name" class="p-2 w-100 mt-2 mt-md-0">
+
+                        <input name="email" type="email" placeholder="Email Address" class="p-2 w-100 mt-md-3 mt-2">
+
+                        <div class="d-flex flex-column justify-content-end mt-2 mt-md-4 ">
+                            <button type="submit" class="btn-comment w-100 mt-2 mt--md-3 justify-content-end">Add
+                                comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="w-100 px-md-6 px-custom1 h-100">
+            <div class="blog">
+                <h5 class="my-2 my-md-2 text-uppercase mb-3">You may also like</h5>
+                <div class="posts row d-flex">
+                    <div class="col-12 post col-md-4">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147.png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit
+                            amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                    <div class="col-12 post col-md-4">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147.png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit
+                            amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                    <div class="col-12 post col-md-4">
+                        <div class="post-img">
+                            <img src="./img/img-blog/Rectangle 1147.png" alt="">
+                        </div>
+                        <p class="post-day">
+                            04/04/2023
+                        </p>
+                        <div class="post-title">
+                            <h4>Lorem ipsum color ipsum color</h4>
+                        </div>
+                        <div class="post-desc">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit ipsum dolor sit
+                            amet, consectetuer
+                            adipiscing elit
+                        </div>
+                        <p class="post-read-more">Read more</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer-section spad mt-5">
+        <section class="bg-footer position-relative">
+            <img src="./img/icon/Group.png" class="position-absolute bottom-0 end-0">
+            <div class="container">
+                <div class="row justify-content-lg-between pt-5">
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Essential Oils</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Single</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Blends</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Unitary oils</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The mixtures</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Hydrolats</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our simple
+                                    hydrolats</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our blends of
+                                    Hydrolats</a></li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Massage Oils</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Macerates</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Massage Oils</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Vegetable oils</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Assortments</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Boxes</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Books</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">DIY boxes</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Accessories
+                                    (laboratory)</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Diffusers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Site Map</span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Guide</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">What are Essential
+                                    oils</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Magali's words</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">The herbarium</a>
+                            </li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Our brand</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our story</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our commitments</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Our team</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Synergie</a></li>
+                        </ul>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title">Connect</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Consumers</a></li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Professional</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-auto mb-3">
+                        <span class="lh-lg fw-bold text-white text-white-title">Find Us</span>
+                        <span class="clear">&nbsp;</span>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Interactive map</a>
+                            </li>
+                            <li class="lh-lg"><a class="text-200 text-decoration-none" href="#!">Online sale points</a>
+                            </li>
+                        </ul>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href="" class="text-white">Term &
+                                Condition</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href="" class="text-white">Retours
+                                livraison</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href="" class="text-white">Privacy
+                                Policy</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">FAQs</a></span>
+                        <span class="clear">&nbsp;</span>
+                        <span class="lh-lg fw-bold text-white text-white-title"><a href=""
+                                class="text-white">Telechargements</a></span>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-auto mb-3 text-white">
+                        <h5 class="lh-lg fw-bold text-200 text-white">SUBSCRIBE</h5>
+                        <p>Send the new discount campaigns to my email</p>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12">
+                                <div class="input-container w-100">
+                                    <input class="form-control input-box bg-800 border-0 rounded-0" type="email"
+                                        placeholder="Enter Email" aria-label="email" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="lh-lg fw-bold text-200 text-white">CONTACT</h5>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12">
+                                <span><i class="fa fa-map-marker me-4" aria-hidden="true"></i>Essenciagua distillery,
+                                    HQE business park La Tieule 48500 La Tieule</span><br>
+                                <span><i class="fa fa-phone me-3" aria-hidden="true"></i> Such. : 04 66 48 45
+                                    06</span><br>
+                                <span><i class="fa fa-envelope me-3"
+                                        aria-hidden="true"></i>contact@essenciagua.com</span><br>
+                            </div>
+                        </div>
+
+                        <h5 class="lh-lg fw-bold text-200 text-white">FOLLOW US</h5>
+                        <div class="row input-group-icon mb-5">
+                            <div class="col-12 d-flex align-items-center follow-us">
+                                <i class="fa fa-facebook-square me-3" aria-hidden="true"></i>
+                                <i class="fa fa-youtube-play me-3" aria-hidden="true"></i>
+                                <i class="fa fa-instagram me-3" aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square me-3" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end of .container-->
+            <hr class="border border-800" />
+            <div class="row pb-3 p-0 w-100">
+                <div class="col-md-12 order-0">
+                    <p class="text-200 text-center">Essenciagua © 2022 - 2023. Tous droits reserves.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+    </footer>
+    <!-- Footer End -->
+
+
+    <script>
+        const minusBtns = document.querySelectorAll(".minus-btn");
+        const plusBtns = document.querySelectorAll(".plus-btn");
+        const inputsQty = document.querySelectorAll("input[type='number']");
+
+        for (let i = 0; i < minusBtns.length; i++) {
+            minusBtns[i].addEventListener("click", function () {
+                if (inputsQty[i].value > 1) {
+                    inputsQty[i].value = parseInt(inputsQty[i].value) - 1;
+                }
+            });
+
+            plusBtns[i].addEventListener("click", function () {
+                inputsQty[i].value = parseInt(inputsQty[i].value) + 1;
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
