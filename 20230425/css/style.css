@@ -56,12 +56,23 @@ html {
 .bg-footer {
   background-color: #263F4F !important;
 }
-
+.product-button-next,
+.product-button-prev {
+  display: none;
+}
+.product__desc .product__desc-nav li svg {
+  display: none;
+}
 .text-dark-properties {
   height: 19px;
   width: 661px;
   margin-top: 12px;
   color: #FFFFFF !important;
+}
+
+.text-blue-title,
+.text-blue-title a {
+  color: #0AA3D0 !important;
 }
 
 .plyr button {
@@ -204,11 +215,61 @@ nav {
   align-items: center;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
+.dropdown-mega:hover .dropdown-menu {
   display: block;
   border: none;
   border-radius: 0px;
+}
+
+#close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+.navbar .navbar-collapse .navbar-nav .dropdown-menu .item-menu.main,
+.navbar .navbar-collapse .item-menu.main a {
+  font-weight: bold;
+  margin:0;
+  color: black;
+}
+
+.navbar .navbar-collapse .navbar-nav .dropdown-menu .item-menu,
+.navbar .navbar-collapse .item-menu a{
+  margin: 5px 0 5px 10px;
+  color:black;
+}
+
+.navbar .navbar-collapse .navbar-nav .dropdown-menu .img-item{
+  height:155px;
+}
+
+.navbar .navbar-collapse .navbar-nav .dropdown-menu #close-icon:hover {
+  cursor: pointer;
+}
+
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  position: absolute;
+  left: 0;
+}
+
+
+
+.filter .dropdown-sorted .dropdown-item.active,
+.dropdown-sorted .dropdown-item:active {
+  background: white !important;
+  color: black !important;
+}
+
+.filter .dropdown-sorted .dropdown-item:focus,
+.dropdown-sorted .dropdown-item:hover {
+  background: #F6F6F6 !important;
+  color: black !important;
+  font-weight: bold;
 }
 
 
@@ -474,6 +535,45 @@ nav {
   opacity: 1;
 }
 
+
+/* ---------------------------------------------------------
+■ Subscribe
+--------------------------------------------------------- */
+.subscribe {
+  background: #263F4F;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.subscribe .subscribe-heading {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe .subscribe-heading .detail {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subscribe .form-input input {
+  height: 40px;
+  border: 1px solid #BDBDBD;
+  border-radius: 0 !important;
+}
+
+.subscribe .button-join {
+  background: #30AA88;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  border: 0px;
+  margin: 0 auto;
+}
+
 /* ---------------------------------------------------------
 ■ Product
 --------------------------------------------------------- */
@@ -589,6 +689,21 @@ nav {
 /* ---------------------------------------------------------
 ■ Bestsllers
 --------------------------------------------------------- */
+.bestsellers .flex-fill  {
+  padding-bottom: 2rem;
+}
+.bestsellers .flex-fill  img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+
+}
+.promotions h2 {
+  margin-bottom: 16px;
+}
+.bestsellers {
+  margin-top: 44px;
+}
 .bestsellers .card .product-img {
   display: flex !important;
   justify-content: center !important;
@@ -917,9 +1032,12 @@ nav {
   height: 45px !important;
 }
 
-.follow-us>i {
+.follow-us>a>i {
+  color: white;
   font-size: 24px;
 }
+
+
 
 /* ------------------------------------------------------------------------- */
 /* PRODUCT FILTER */
@@ -2557,7 +2675,7 @@ select.form-select option:first-child {
   text-transform: uppercase;
   color: #242F3E;
   font-family: 'Lato';
-font-style: normal;
+  font-style: normal;
 }
 
 .vitality .text {
@@ -2737,33 +2855,42 @@ font-style: normal;
   max-width: 40px;
   text-align: center;
   border-radius: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2)!important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
-.recipe-cart .bg-pink{
+.recipe-cart .bg-pink {
   background: rgba(162, 126, 182, 0.1);
 }
 
-.recipe-cart .btn-add{
+.recipe-cart .btn-add {
   background: #A27EB6;
-  color:white;
+  color: white;
   width: 295px;
   height: 48px;
-  border:none!important;
+  border: none !important;
 }
 
 /* -------------------------------------------------------- */
 /* Guide */
 /* -------------------------------------------------------- */
 .imgs-slider .img-item p {
-    display: none;
+  display: none;
 }
+
 .imgs-slider .imgs-pc {
-  display: flex; 
+  display: flex;
   margin: 10px 0;
   gap: 10px;
 }
+
 .imgs-slider .imgs-pc .swiper-slide {
   width: 33.333%;
 
+}
+.filter-product-header-mb,
+.filter-product .filter-product-selected-mb {
+  display: none;
+}
+.filter-product-heading-desc a {
+  display: none;
 }
