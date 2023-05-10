@@ -2894,3 +2894,405 @@ select.form-select option:first-child {
 .filter-product-heading-desc a {
   display: none;
 }
+
+
+/* ---------------------------------------------------------
+■ My Account Info
+--------------------------------------------------------- */
+.account-info .account-info-header h2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #242F3E;
+  float: left;
+}
+
+.account-info .account-info-header {
+  display: inline-block;
+  padding-left: 0px !important;
+}
+
+.account-info .account-info-header h2 span {
+  margin: 0 5px 0 10px;
+}
+
+.account-info .account-info-header button {
+  background: #263F4F;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 6px 12px;
+}
+
+.account-info .account-info-header .account-info-header-button {
+  float: right;
+}
+.account-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Lato', sans-serif;
+}
+
+.my-account-seleted-lbl{
+  background: #F5FBF9;
+  border-radius: 4px;
+}
+
+.my-account-lbl{
+  display: flex; /* Important */ 
+  width: 100%;
+  height: 41px;
+  padding: 10px;
+}
+
+.my-account-opt-clss{
+  padding-left: 14px;
+}
+
+.remove-padding-left{
+  padding-left: 0rem !important;
+}
+
+.account-header-underline{
+  border: 1px solid #E6E6E6;
+  border-radius: 1px;
+}
+
+.account-grid{
+  display: block;
+  width: 500px !important;
+  margin-top: 20px !important;
+}
+
+.account-grid-row {
+  height: 41px;
+  padding-left: 0px !important;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #898989;
+}
+
+.account-grid-row-2 {
+  height: 41px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #393939;
+}
+
+.w-450{
+  width: 450px !important;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+}
+
+.account-info-txt {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #898989;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.user-loyalty-point{
+  height: 88px;
+  background: rgba(162, 126, 182, 0.1);
+  border-radius: 4px;
+}
+
+.user-loyalty-point > .row{
+  padding-top: 5%;
+}
+
+/* ---------------------------------------------------------
+■ My Account Address
+--------------------------------------------------------- */
+.account-address .account-address-header h2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #242F3E;
+  float: left;
+}
+
+.account-address .account-address-header {
+  display: inline-block;
+  padding-left: 0px !important;
+}
+
+.account-address .account-address-header h2 span {
+  margin: 0 5px 0 10px;
+}
+
+.account-address .account-address-header button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  background: #FFFFFF;
+}
+
+.account-address .account-address-header .account-address-header-button {
+  float: right;
+}
+
+.account-address-txt {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #898989;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.address-lists-table-header {
+  background: #F5F5F5;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------------------------
+■ My Account Order Detail
+--------------------------------------------------------- */
+.order-detail-grid{
+  background: #F1F1F1;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.order-detail-grid .row:first-child{
+  padding-top: 40px;
+}
+
+.order-detail-grid-title1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.order-detail-grid-title2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.order-detail-grid-content1 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #393939;
+}
+
+.order-detail-grid-content2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.order-detail-grid-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0AA3D0;
+  cursor: pointer;
+}
+
+.order-history-row-underline{
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.order-detail-grid span{
+  margin-bottom: 5px;
+}
+
+.order-detail-grid .row{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-lst-class{
+  background: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.product-lst-content1{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: rgba(48, 48, 48, 0.5);
+}
+
+.product-lst-content2{
+  font-weight: 700;
+  font-size: 16px;
+  color: #303030;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.order-detail-grid2{
+  padding-top: 30px;
+}
+
+.order-detail-grid2 .row{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  margin: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.up {
+  margin-left: 2px;
+  color: #ffffff;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* ---------------------------------------------------------
+■ Find Us
+--------------------------------------------------------- */
+.map-right{
+  padding-right: 80px;
+  position: relative;
+}
+
+.map-left{
+  display: flex;
+  height: 600px;
+  position: relative;
+  background: #263F4F;
+}
+
+.map-left2{
+  display: flex;
+  height: 460px;
+  position: relative;
+  background: #30AA88;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 69%;
+  width: 99%;
+  position: absolute;
+}
+
+.find-us-map-left{
+  padding-left: 70px;
+  color: #FFFFFF;
+  margin-top: auto; 
+  margin-bottom: auto; 
+  text-align: left;
+}
+
+.find-us-map-left2{
+  padding-left: 100px;
+  color: #FFFFFF;
+  margin-top: auto; 
+  margin-bottom: auto; 
+  text-align: left;
+}
+
+.find-us-second-row{
+  margin-left: 0px !important;
+  background: #F5F5F5;
+}
+
+.find-us-second-row-title{
+  margin-top: 10px;
+  height: 50px;
+}
+
+.find-us-second-row-content{
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.padd-25{
+  padding-left: 30px !important;
+}
+
+.find-us-cell {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  width: 80%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.find-us-cell2{
+  padding-bottom: 25px;
+  padding-left: 20px;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.find-us-cell3{
+  padding-bottom: 25px;
+  padding-left: 20px;
+  width: 80%;
+}
+
+.find-us-third-row{
+  padding-top: 100px;
+  padding-left: 15px;
+  height: 460px; 
+  position: relative;
+}
+
+.find-us-map-left-content {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+}
