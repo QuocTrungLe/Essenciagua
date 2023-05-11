@@ -1730,7 +1730,60 @@ select.form-select option:first-child {
 }
 
 .delivery-address .first {
-  width: 70px;
+  width: 105px;
+}
+.product__cart-pc {
+  display: block;
+}
+.product__cart-mobile {
+  display: none;
+}
+.cart .delivery-method input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  margin-top:36%;
+  border-radius: 50%;
+}
+.cart .delivery-method input[type="radio"]:checked {
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.cart .delivery-method input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.cart .payment-success h5 {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5EB049;
+}
+
+.cart .payment-success phone, .cart .payment-success a {
+  color: #24BAE6;
+  font-weight: 500;
+}
+
+
+
+.cart .checkout-order{
+  text-align: center;
 }
 
 .product-list-invoice tbody tr,
@@ -1823,6 +1876,11 @@ select.form-select option:first-child {
 .cart .note {
   background: rgba(162, 126, 182, 0.1);
   color: #8D65A3;
+}
+
+.cart .order-summary .accordion-button{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .cart .table {
@@ -1943,7 +2001,8 @@ select.form-select option:first-child {
   width: 295px;
   height: 48px;
   background: #263F4F;
-  border: 1px solid #000000;
+  border:0;
+  /* border: 1px solid #000000; */
   color: white;
 }
 
@@ -1953,9 +2012,6 @@ select.form-select option:first-child {
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.cart .your-address {
-  padding-right: 60px;
-}
 
 .cart .bg-newaddress {
   background: #F8F8F8;
@@ -1980,6 +2036,12 @@ select.form-select option:first-child {
 
 .cart .order-summary .input-container {
   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.cart .accordion-button:not(.collapsed).button-show {
+  background: #e9e9ee !important;
+  color: black !important;
+  font-weight: 400!important;
 }
 
 .cart .order-summary .input-container::before {
